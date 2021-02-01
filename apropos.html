@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="style.css" type="text/css" rel="stylesheet"/>
+	<meta charset="utf-8">
+	<meta name="description" content="site web d&eacute;di&eacute; au po&egrave;te Khalil Gibran"/>
+	<meta name="keywords" content="poete,po&egrave;te,Khalil,Gibran,Paroles,philosophie"/>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="deroulant"><a href="#"> Biographie &ensp;</a>
+				<ul class="sous">
+					<li><a href="index.html"> Accueil </a></li>
+					<li><a href="savie.html">Sa vie</a></li>
+					<li><a href="sesoeuvres.html">Ses Oeuvres</a></li>
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Ses Livres &ensp;</a>
+				<ul class="sous">
+					<li><a href="leprophete.html">Le proph&egrave;te</a></li>
+					<li><a href="lesable.html">Le sable et l'&eacute;cume</a></li>
+					<li><a href="lesailes.html">Les ailes bris&eacute;es</a></li>
+					<li><a href="rireetlarme.html">Rires et Larmes</a></li>
+				</ul>
+			</li>
+			<li><a href="apropos.html">A propos</a></li>
+		</ul>
+	</nav>
+
+	<div class="feuille">
+
+		<h1>Votre avis compte pour nous !</h1>
+
+	
+		<div class="formulaire">
+		<form method="post" action="form.php">
+		<fieldset>
+			
+			<legend>Informations personnelles:</legend>
+			</br>
+			<label for="name">Nom:</label>
+			<input type="text" name="name" id="name" required>
+			<label for="marriedname">Nom marital</label>
+			<input type="text" name="marriedname" id="marriedname" required>
+			<label for="Surname">Pr&eacute;nom:</label>
+			<input type="text" name="Surname" id="Surname" required>
+			</br></br>
+			<label for="date">Date de naissance:</label>
+			<input type="date" name="date" id="date" required>
+			</br></br>
+			<input type="radio" name="sex" id="sex" value="sex" required>
+            <label for="sex">Homme</label>
+            <input type="radio" name="sex" id="sex" value="sex" required>
+            <label for="sex">Femme</label>
+            <input type="radio" name="sex" id="sex" value="sex" checked="" required>
+            <label for="sex">Autre</label>
+            </br></br>
+            <label for="departement">D&eacute;partement</label>
+            <select id="departement" name="departement" required>
+            	<option value="none">-- --</option>
+            <optgroup label="Alsace">
+				<option value="Bas-Rhin">Bas-Rhin</option>
+				<option value="Haut-Rhin">Haut-Rhin</option>
+			</optgroup>
+			<optgroup label="Aquitaine">
+				<option value="Dordogne">Dordogne</option>
+				<option value="Gironde">Gironde</option>
+				<option value="Landes">Landes</option>
+				<option value="Lot-et-Garonne">Lot-et-Garonne</option>
+				<option value="Pyrénées Atlantiques">Pyrénées Atlantiques</option>
+			</optgroup>
+			<optgroup label="Auvergne">
+				<option value="Allier">Allier</option>
+				<option value="Cantal">Cantal</option>
+				<option value="Haute Loire">Puy-de-Dôme Haute Loire</option>
+				<option value="Puy-de-Dôme">Puy-de-Dôme</option>
+			</optgroup>
+			<optgroup label="Basse-Normandie">
+				<option value="Calvados">Calvados</option>
+				<option value="MancheOrne">Manche</option>
+				<option value="Orne">Orne</option>
+			</optgroup>
+			<optgroup label="Bourgogne">
+				<option value="Côte-d'Or">Côte-d'Or</option>
+				<option value="Nièvre">Nièvre</option>
+				<option value="Saône-et-Loire">Saône-et-Loire</option>
+				<option value="Yonne">Yonne</option>
+
+				
+			<optgroup label="Bretagne">
+				<option value="Côtes d'Armor">Côtes d'Armor</option>
+				<option value="Finistère">Finistère</option>
+				<option value="Ille-et-Vilaine">Ille-et-Vilaine</option>
+				<option value="Morbihan">Morbihan</option>
+			<optgroup label="Centre">
+				<option value="Cher">Cher</option>
+				<option value="Eure-et-Loir">Eure-et-Loir</option>
+				<option value="Indre">Indre</option>
+				<option value="Indre-et-Loire">Indre-et-Loire</option>
+				<option value="Loir-et-Cher">Loir-et-Cher</option>
+				<option value="Loiret">Loiret</option>
+			</optgroup>
+			<optgroup label="Champagne-Ardenne">
+				<option value="Ardennes">Ardennes</option>
+				<option value="Aube">Aube</option>
+				<option value="Marne">Marne</option>
+				<option value="Haute Marne">Haute Marne</option>
+			</optgroup>
+			<optgroup label="Corse">
+				<option value="Corse-du-Sud">Corse du sud</option>
+				<option value="Haute Corse">Haute Corse</option>
+			</optgroup>
+			<optgroup label="Franche-Comté">
+				<option value="Doubs">Doubs</option>
+				<option value="Jura">Jura</option>
+				<option value="Haute Saône">Haute Saône</option>
+				<option value="Territoire de Belfort">Territoire de Belfort</option>
+			</optgroup>
+			<optgroup label="Haute-Normandie">
+				<option value="Eure">Eure</option>
+				<option value="Seine Maritime">Seine Maritime</option>
+			</optgroup>
+			<optgroup label="Île-de-France">
+				<option value="Paris">Paris</option>
+				<option value="Seine-et-Marne">Seine-et-Marne</option>
+				<option value="Yvelines">Yvelines</option>
+				<option value="Essonne">Essonne</option>
+				<option value="Hauts-de-Seine">Hauts-de-Seine</option>
+				<option value="Seine-St-Denis">Seine-St-Denis</option>
+				<option value="Val-de-Marne">Val-de-Marne</option>
+				<option value="Val-D'Oise">Val-D'Oise</option>
+			</optgroup>
+			<optgroup label="Languedoc-Roussillon">
+				<option value="Aude">Aude</option>
+				<option value="Gard">Gard</option>
+				<option value="Hérault">Hérault</option>
+				<option value="Lozère">Lozère</option>
+				<option value="Pyrénées Orientales">Pyrénées Orientales</option>
+			</optgroup>
+			<optgroup label="Limousin">
+				<option value="Corrèze">Corrèze</option>
+				<option value="Creuset">Creuset</option>
+				<option value="Haute Vienne">Haute Vienne</option>
+			</optgroup>
+			<optgroup label="Lorraine">
+				<option value="Meurthe-et-Moselle">Meurthe-et-Moselle</option>
+				<option value="Meuse">Meuse</option>
+				<option value="Moselle">Moselle</option>
+				<option value="Vosges">Vosges</option>
+			</optgroup>
+			<optgroup label="Midi-Pyrénées">
+				<option value="Ariège">Ariège</option>
+				<option value="Aveyron">Aveyron</option>
+				<option value="Haute Garonne">Haute Garonne</option>
+				<option value="Gers">Gers</option>
+				<option value="Lot">Lot</option>
+				<option value="Hautes Pyrénées">Hautes Pyrénées</option>
+				<option value="Tarn">Tarn</option>
+				<option value="Tarn-et-Garonne">Tarn-et-Garonne</option>
+			</optgroup>
+			<optgroup label="Nord-Pas-de-Calais">
+				<option value="Nord">Nord</option>
+				<option value="Pas-de-Calais">Pas-de-Calais</option>
+			</optgroup>
+			<optgroup label="Pays de la Loire">
+				<option value="Loire Atlantique">Loire Atlantique</option>
+				<option value="Maine-et-Loire">Maine-et-Loire</option>
+				<option value="Mayenne">Mayenne</option>
+				<option value="Sarthe">Sarthe</option>
+				<option value="Vendée">Vendée</option>
+			</optgroup>
+			<optgroup label="Picardie">
+				<option value="Aisne">Aisne</option>
+				<option value="Oise">Oise</option>
+				<option value="Somme">Somme</option>
+			</optgroup>
+			<optgroup label="Poitou-Charentes">
+				<option value="Charente">Charente</option>
+				<option value="Charente-Maritime">Charente-Maritime</option>
+				<option value="Deux-Sèvres">Deux-Sèvres</option>
+				<option value="Vienne">Vienne</option>
+			</optgroup>
+			<optgroup label="Provence-Alpes-Côte d'Azur">
+				<option value="Alpes de Haute Provence">Alpes de Haute Provence</option>
+				<option value="Hautes-Alpes">Hautes-Alpes</option>
+				<option value="Alpes Maritimes">Alpes Maritimes</option>
+				<option value="Bouches-du-Rhône">Bouches-du-Rhône</option>
+				<option value="Var">Var</option>
+				<option value="Vaucluse">Vaucluse</option>
+			</optgroup>
+			<optgroup label="Rhône-Alpes">
+				<option value="Ain">Ain</option>
+				<option value="Ardèche">Ardèche</option>
+				<option value="Drôme">Drôme</option>
+				<option value="Isère">Isère</option>
+				<option value="Loire">Loire</option>
+				<option value="Rhône">Rhône</option>
+				<option value="Savoie">Savoie</option>
+				<option value="Haute Savoie">Haute Savoie</option>
+			</optgroup>
+			<optgroup label="Région Outre-mer">
+				<option value="Guadeloupe">Guadeloupe</option>
+				<option value="Martinique">Martinique</option>
+				<option value="La Réunion">La Réunion</option>
+				<option value="Guyane">Guyane</option>
+				<option value="Mayotte">Mayotte</option>
+			</optgroup>
+			<optgroup label="Territoire Outre-mer">
+				<option value="Terres Australes et Antarctiques">Terres Australes et Antarctiques</option>
+				<option value="Wallis et Futuna">Wallis et Futuna</option>
+				<option value="Polynésie Française">Polynésie Française</option>
+				<option value="Nouvelle-Calédonie">Nouvelle-Calédonie</option>
+				<option value="Saint-Pierre-et-Miquelon">Saint-Pierre-et-Miquelon</option>
+			</optgroup>
+			</select>
+			</br></br>
+		</fieldset>
+		</div> 
+		<div class="formulaire">
+		<fieldset>
+			<legend>Votre avis:</legend>
+			</br>
+			<textarea name="avis" id="avis" rows="9" cols="90" maxlength="500" required placeholder="&Eacute;crivez votre avis ici"></textarea>
+			</br></br>
+			<label for="mail">Votre adresse mail:</label>
+			<input type="email" name="mail" id="mail" required>
+			</br></br>
+			<input type="checkbox" id="retour" name="retour" value="retour" required>
+			<label for="retour">J'accepte de recevoir la Newsletter </label>
+ 			</br>
+ 			<input type="checkbox" id="retour" name="retour" value="retour">
+ 			<label for="retour">Je refuse qu'on d&eacute;marche mon adresse mail</label>
+ 			</br>
+ 			<input type="checkbox" id="retour" name="retour" value="retour">
+ 			<label for="retour">J'accepte recevoir des courriels d'autres sites web</label>
+ 			</br>
+ 			<input type="checkbox" id="retour" name="retour" value="retour">
+ 			<label for="retour">Je souhaite l'anonymat</label>
+ 			</br></br>
+ 			<input type="Submit" id="Envoyer" value="Envoyer">
+ 			</br></br>
+ 			</fieldset>
+
+
+ 	
+		</div>
+	</form>
+	</div>
+
+</body>
+</html>
